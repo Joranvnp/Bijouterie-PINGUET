@@ -51,4 +51,113 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.creations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.creations__title {
+  margin-top: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3.2rem;
+  color: #4F3422;
+}
+.creations__title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #AB6400;
+}
+.creations__subtitle {
+  margin-top: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.4rem;
+  color: #4F3422;
+  text-align: center;
+}
+.creations__images {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.creations__image {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__map iframe {
+  width: 80vw;
+  height: 20vh;
+  margin-top: 2rem;
+}
+.contact__text {
+  color: #AB6400;
+}
+.contact__horaires, .contact__adresse {
+  width: 80%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+}
+.contact__form {
+  width: 80%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: white;
+}
+.contact__title {
+  margin-top: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3.2rem;
+  color: #4F3422;
+  align-self: center;
+}
+.contact__label {
+  margin-top: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.4rem;
+  color: lightgray;
+}
+.contact__input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #AB6400;
+}
+.contact__submit {
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: none;
+  background-color: #FFC53D;
+  color: white;
+  cursor: pointer;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  align-self: center;
+}
+.contact__subtitle {
+  margin-top: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.4rem;
+  color: #4F3422;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
