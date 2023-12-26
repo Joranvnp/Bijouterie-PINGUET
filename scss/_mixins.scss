@@ -16,3 +16,7 @@
 @mixin font-line-height($height) {
   line-height: $height;
 }
+
+@mixin background-color() {
+  background-color: $secondBackground;
+}
