@@ -12,8 +12,8 @@
 <body>
     <nav class="navigation">
         <img class="navigation__logo" src="assets/logo.png" alt="logo">
-        <label class="navigation__burger" for="burger"></label>
-        <input class="navigation__input" type="checkbox" name="burger" id="burger">
+        <input class="navigation__input" type="checkbox" name="burger" id="icone-burger-close">
+        <label class="navigation__burger" for="icone-burger-close"></label>
         <ul class="navigation__items">
             <li class="navigation__item">Accueil</li>
             <li class="navigation__item">Création</li>
@@ -22,9 +22,10 @@
         </ul>
     </nav>
     <header class="header">
-        <h1 class="header__subtitle">Maitre artisan Bijoutier Joailler depuis 1950 <br>Création, fabrication,
-            transformation, réparation, rénovation</h1>
-        <h2 class="header__title">Bijouterie Joaillerie PINGUET</h2>
+        <h1 class="header__subtitle">Maitre artisan Bijoutier Joailler depuis 1950<span>Création, fabrication,
+                transformation, réparation, rénovation</span>
+        </h1>
+        <h2 class="header__title">Bijouterie Joaillerie <span>PINGUET</span></h2>
     </header>
     <main class="main">
         <h2 class="main__title">L'esprit créatif inspire les bonnes idées. Soyez inventif !</h2>
@@ -66,14 +67,23 @@
         <h3 class="creations__subtitle">Des bijoux en Saphir, Rubis, Emeraude, Perle, Perle De Tahiti, Aigue_Marine,
             Tanzanite, Citrine, Amethyste, Peridot, Tourmaline, Spinelle, Grenat etc...</h3>
         <div class="creations__images">
-            <img src="assets/" alt="" class="creations__image"><img src="assets/" alt="" class="creations__image"><img
-                src="assets/" alt="" class="creations__image"><img src="assets/" alt="" class="creations__image"><img
-                src="assets/" alt="" class="creations__image"><img src="assets/" alt="" class="creations__image"><img
-                src="assets/" alt="" class="creations__image">
+            <img src="assets/creation1.png" alt="1" class="creations__image">
+            <img src="assets/creation2.png" alt="2" class="creations__image">
+            <img src="assets/creation3.png" alt="3" class="creations__image">
+            <img src="assets/creation4.png" alt="4" class="creations__image">
+            <img src="assets/creation5.png" alt="5" class="creations__image">
+            <img src="assets/creation6.png" alt="6" class="creations__image">
+            <img src="assets/creation7.png" alt="7" class="creations__image">
         </div>
     </section>
     <section class="contact">
-        <!-- leaflet emplacement -->
+        <div class="contact__map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11053.76426233274!2d-1.1522517!3d46.1618751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153a89b82c8d7%3A0x851033b48a3ca10c!2sPinguet%20bijoutier%20Joaillier!5e0!3m2!1sen!2sfr!4v1703599431397!5m2!1sen!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
         <div class="contact__text">
             <p class="contact__horaires">Horaires d'ouverture <br>Du mardi au samedi de 10h à 12h et de15h à 19h et sur
                 rendez-vous</p>
@@ -85,28 +95,28 @@
             <h2 class="contact__title">Contact Us</h2>
             <label for="nom" class="contact__label">Nom</label>
             <input type="text" name="nom" id="nom" class="contact__input">
-            <label for="email">Email</label>
+            <label for="email" class="contact__label">Email</label>
             <input type="email" name="email" id="email" class="contact__input">
-            <label for="message">Message</label>
+            <label for="message" class="contact__label">Message</label>
             <input type="text" name="message" id="message" class="contact__input">
-            <input type="submit" value="Envoyez votre message">
+            <input type="submit" value="Envoyez votre message" class="contact__submit">
         </form>
-
-        <footer class="footer">
-            <section class="footer__left">
-                <h2 class="footer__title">Bijouterie Joaillerie PINGUET</h2>
-                <a class="footer__adresse" href="">29 rue Gargoulleau
-                    17000 LA ROCHELLE</a>
-                <p class="footer__copyright">Francis Lecutiez © 2023</p>
-            </section>
-            <div class="footer__right">
-                <a class="footer__email" href="mailto:bijouteriepinguet@orange.fr">bijouteriepinguet@orange.fr</a>
-                <a class="footer__phone" href="tel:+335 46 41 12 39">05 46 41 12 39</a>
-                <p class="footer__legal">Mention légales</p>
-                <p class="footer__confidential">Politique de confidentialité</p>
-            </div>
-        </footer>
     </section>
+
+    <footer class="footer">
+        <section class="footer__left">
+            <h2 class="footer__title">Bijouterie Joaillerie PINGUET</h2>
+            <a class="footer__adresse" href="">29 rue Gargoulleau
+                17000 LA ROCHELLE</a>
+            <p class="footer__copyright">Francis Lecutiez © 2023</p>
+        </section>
+        <div class="footer__right">
+            <a class="footer__email" href="mailto:bijouteriepinguet@orange.fr">bijouteriepinguet@orange.fr</a>
+            <a class="footer__phone" href="tel:+335 46 41 12 39">05 46 41 12 39</a>
+            <p class="footer__legal">Mention légales</p>
+            <p class="footer__confidential">Politique de confidentialité</p>
+        </div>
+    </footer>
 </body>
 
 </html>

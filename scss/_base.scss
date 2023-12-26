@@ -49,5 +49,188 @@ html {
         @include paragraph-mobile;
         color: $firstBackground;
 
+
+  font-size: 62.5%;
+}
+
+body {
+  @include secondBackground;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  gap: 6rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__title {
+    @include titre-mobile;
+    color: $highText;
+    margin-bottom: 5rem;
+    font-weight: 500;
+    span {
+      border-bottom: $solidBackground 4px solid;
+    }
+  }
+
+  &__subtitle {
+    @include sous-titre-mobile;
+    color: $highText;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+    font-weight: 500;
+    // border: black 1px solid;
+    width: 90%;
+    span {
+      display: block;
+      margin-top: 5rem;
+    }
+  }
+}
+
+.creations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        margin-top: 2rem;
+        @include titre-paragraph-mobile;
+        color: $highText;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $lowText;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 2rem;
+        @include sous-titre-mobile;
+        color: $highText;
+        text-align: center;
+    }
+
+    &__images {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contact {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $contactBackground;
+
+    &__map iframe {
+        width: 80vw;
+        height: 20vh;
+        margin-top: 2rem;
+    }
+
+    &__text {
+        color: $thirdBackground;
+    }
+
+    &__horaires, &__adresse {
+        width: 80%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        @include paragraph-mobile;
+    }
+
+    &__form {
+        width: 80%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+        background-color: white;
+    }
+
+    &__title {
+        margin-top: 2rem;
+        @include titre-paragraph-mobile;
+        color: $highText;
+        align-self: center;
+    }
+
+    &__label {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        @include sous-titre-mobile;
+        color: lightgray;
+    }
+
+    &__input {
+        margin-left: 2rem;
+        width: 80%;
+        border: none;
+        border-bottom: 2px solid $lowText;
+    }
+
+    &__submit {
+        width: 80%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: none;
+        background-color: $solidBackground;
+        color: white;
+        cursor: pointer;
+        @include paragraph-mobile;
+        align-self: center;
+    }
+
+    &__subtitle {
+        margin-top: 2rem;
+        @include sous-titre-mobile;
+        color: $highText;
+        text-align: center;
+    }
+}
+
+.footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include paragraph-mobile;
+    color: $highText;
+
+    &__left, &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    &__left a, &__right a{
+        text-decoration: none;
+        color: $highText;
     }
 }
