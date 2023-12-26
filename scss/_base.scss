@@ -1,3 +1,45 @@
+html {
+  font-size: 62.5%;
+
+}
+
 body {
   @include secondBackground;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  gap: 6rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__title {
+    @include titre-mobile;
+    color: $highText;
+    margin-bottom: 5rem;
+    font-weight: 500;
+    span {
+      border-bottom: $solidBackground 4px solid;
+    }
+  }
+
+  //Centrer aussi mon subtitle
+
+  &__subtitle {
+    @include sous-titre-mobile;
+    color: $highText;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+    font-weight: 500;
+    // border: black 1px solid;
+    width: 90%;
+    span {
+      display: block;
+      margin-top: 5rem;
+    }
+  }
 }

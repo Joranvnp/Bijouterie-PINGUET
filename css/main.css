@@ -62,7 +62,7 @@ table {
   height: 10vh;
 }
 .navigation__logo {
-  width: 25vw;
+  width: 30vw;
   height: auto;
 }
 .navigation__input {
@@ -108,6 +108,44 @@ table {
   padding-left: 2rem;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #FEFBE9;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  gap: 6rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 3.6rem;
+  color: #4F3422;
+  margin-bottom: 5rem;
+  font-weight: 500;
+}
+.header__title span {
+  border-bottom: #FFC53D 4px solid;
+}
+.header__subtitle {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.4rem;
+  color: #4F3422;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+  font-weight: 500;
+  width: 90%;
+}
+.header__subtitle span {
+  display: block;
+  margin-top: 5rem;
 }/*# sourceMappingURL=main.css.map */
