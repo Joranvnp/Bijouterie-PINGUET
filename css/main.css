@@ -1,1 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Oswald&display=swap");/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Oswald&display=swap");
+.main {
+  background-color: #AB6400;
+  height: 200vh;
+}
+.main__title {
+  position: relative;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  border: 2px solid red;
+  padding-top: 75vh;
+}
+.main__linesright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main__linesleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}/*# sourceMappingURL=main.css.map */

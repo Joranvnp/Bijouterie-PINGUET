@@ -1,0 +1,22 @@
+.main{
+    background-color: $thirdBackground;
+    height:200vh;
+    &__title{
+        position: relative;
+        height:100vh;
+        @include titre-mobile;
+        text-align: center;
+        border:2px solid red;
+        padding-top: 75vh;
+    }
+    &__linesright{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    &__linesleft{
+        position: absolute;
+        bottom: 0;
+        left:0;
+    }
+}
