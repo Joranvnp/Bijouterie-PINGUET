@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%;
+}
+
 .creations {
     display: flex;
     flex-direction: column;
@@ -41,10 +45,12 @@
 }
 
 .contact {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $contactBackground;
 
     &__map iframe {
         width: 80vw;
@@ -66,6 +72,7 @@
     &__form {
         width: 80%;
         margin-top: 2rem;
+        margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -83,12 +90,14 @@
 
     &__label {
         margin-top: 2rem;
+        margin-left: 2rem;
         @include sous-titre-mobile;
         color: lightgray;
     }
 
     &__input {
-        width: 100%;
+        margin-left: 2rem;
+        width: 80%;
         border: none;
         border-bottom: 2px solid $lowText;
     }
@@ -111,5 +120,27 @@
         @include sous-titre-mobile;
         color: $highText;
         text-align: center;
+    }
+}
+
+.footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include paragraph-mobile;
+    color: $highText;
+
+    &__left, &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    &__left a, &__right a{
+        text-decoration: none;
+        color: $highText;
     }
 }
