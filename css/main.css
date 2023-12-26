@@ -54,4 +54,59 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #9C7232;
+  height: 500vh;
+  padding: 5rem;
+  position: relative;
+}
+.main__title {
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+  font-size: 3.6rem;
+  color: #4F3422;
+  text-align: center;
+  padding-top: 75vh;
+}
+.main__linesright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main__linesleft {
+  position: absolute;
+  top: 120vh;
+  left: 0;
+}
+.main__images {
+  margin-top: 8rem;
+  width: 100%;
+  height: 50vh;
+}
+.main__subtitles {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.4rem;
+  color: #4F3422;
+}
+.main__subtitles::after {
+  content: "";
+  display: block;
+  width: 50vw;
+  height: 4px;
+  margin-top: 2rem;
+  background-color: #FFC53D;
+}
+.main__description {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  color: #FEFBE9;
+
 }/*# sourceMappingURL=main.css.map */

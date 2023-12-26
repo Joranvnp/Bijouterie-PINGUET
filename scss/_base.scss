@@ -1,4 +1,55 @@
 html {
+    font-size: 62.5%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: $thirdBackground;
+    height:500vh;
+    padding: 5rem;
+    position: relative;
+    &__title{
+        height:100vh;
+        @include titre-mobile;
+        color: $highText;
+        text-align: center;
+        padding-top: 75vh;
+    }
+    &__linesright{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    &__linesleft{
+        position: absolute;
+        top: 120vh;
+        left:0;
+    }
+    &__images{
+        margin-top: 8rem;
+        width: 100%;
+        height:50vh;
+    }
+    &__subtitles{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        @include sous-titre-mobile;
+        color: $highText;
+        &::after{
+            content: "";
+            display: block;
+            width: 50vw;
+            height:4px;
+            margin-top:2rem;
+            background-color: $solidBackground;
+        }
+    }
+    &__description{
+        @include paragraph-mobile;
+        color: $firstBackground;
+
+
   font-size: 62.5%;
 }
 
