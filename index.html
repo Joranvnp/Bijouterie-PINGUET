@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,101 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/utils.js" defer></script>
 </head>
+
 <body>
-    
+    <nav class="navigation">
+        <img class="navigation__logo" src="assets/logo.png" alt="logo">
+        <label class="navigation__burger" for="burger"></label>
+        <input class="navigation__input" type="checkbox" name="burger" id="burger">
+        <ul class="navigation__items">
+            <li class="navigation__item">Accueil</li>
+            <li class="navigation__item">Création</li>
+            <li class="navigation__item">A propos</li>
+            <li class="navigation__item">Contact</li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 class="header__subtitle">Maitre artisan Bijoutier Joailler depuis 1950 <br>Création, fabrication,
+            transformation, réparation, rénovation</h1>
+        <h2 class="header__title">Bijouterie Joaillerie PINGUET</h2>
+    </header>
+    <main class="main">
+        <h2 class="main__title">L'esprit créatif inspire les bonnes idées. Soyez inventif !</h2>
+        <figure class="main__figures">
+            <img src="assets/" alt="img1" class="main__images">
+            <h3 class="main__subtitles">Example of subtitle</h3>
+            <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices
+                mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
+                suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.
+                Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod
+                erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.</p>
+        </figure>
+        <figure class="main__figures">
+            <img src="assets/" alt="img2" class="main__images">
+            <h3 class="main__subtitles">Example of subtitle</h3>
+            <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices
+                mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
+                suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.
+                Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod
+                erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.</p>
+        </figure>
+        <figure class="main__figures">
+            <img src="assets/" alt="img3" class="main__images">
+            <h3 class="main__subtitles">Example of subtitle</h3>
+            <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+                Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices
+                mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
+                suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.
+                Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod
+                erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.</p>
+        </figure>
+    </main>
+    <section class="creations">
+        <h2 class="creations__title">Nos créations</h2>
+        <h3 class="creations__subtitle">Des bijoux en Saphir, Rubis, Emeraude, Perle, Perle De Tahiti, Aigue_Marine,
+            Tanzanite, Citrine, Amethyste, Peridot, Tourmaline, Spinelle, Grenat etc...</h3>
+        <div class="creations__images">
+            <img src="assets/" alt="" class="creations__image"><img src="assets/" alt="" class="creations__image"><img
+                src="assets/" alt="" class="creations__image"><img src="assets/" alt="" class="creations__image"><img
+                src="assets/" alt="" class="creations__image"><img src="assets/" alt="" class="creations__image"><img
+                src="assets/" alt="" class="creations__image">
+        </div>
+    </section>
+    <section class="contact">
+        <!-- leaflet emplacement -->
+        <div class="contact__text">
+            <p class="contact__horaires">Horaires d'ouverture <br>Du mardi au samedi de 10h à 12h et de15h à 19h et sur
+                rendez-vous</p>
+            <p class="contact__adresse">29 rue Gargoulleau
+                17000 LA ROCHELLE</p>
+        </div>
+
+        <form action="" class="contact__form">
+            <h2 class="contact__title">Contact Us</h2>
+            <label for="nom" class="contact__label">Nom</label>
+            <input type="text" name="nom" id="nom" class="contact__input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="contact__input">
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message" class="contact__input">
+            <input type="submit" value="Envoyez votre message">
+        </form>
+
+        <footer class="footer">
+            <section class="footer__left">
+                <h2 class="footer__title">Bijouterie Joaillerie PINGUET</h2>
+                <a class="footer__adresse" href="">29 rue Gargoulleau
+                    17000 LA ROCHELLE</a>
+                <p class="footer__copyright">Francis Lecutiez © 2023</p>
+            </section>
+            <div class="footer__right">
+                <a href="mailto:bijouteriepinguet@orange.fr">bijouteriepinguet@orange.fr</a>
+                <a href="tel:+335 46 41 12 39">05 46 41 12 39</a>
+            </div>
+        </footer>
+    </section>
 </body>
+
 </html>
