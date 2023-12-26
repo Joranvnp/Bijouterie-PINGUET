@@ -1,15 +1,76 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Oswald&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .main {
-  background-color: #AB6400;
-  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #9C7232;
+  height: 500vh;
+  padding: 5rem;
+  position: relative;
 }
 .main__title {
-  position: relative;
   height: 100vh;
   font-family: "Oswald", sans-serif;
-  font-size: 1.6rem;
+  font-size: 3.6rem;
+  color: #4F3422;
   text-align: center;
-  border: 2px solid red;
   padding-top: 75vh;
 }
 .main__linesright {
@@ -19,6 +80,31 @@
 }
 .main__linesleft {
   position: absolute;
-  bottom: 0;
+  top: 120vh;
   left: 0;
+}
+.main__images {
+  margin-top: 8rem;
+  width: 100%;
+  height: 50vh;
+}
+.main__subtitles {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.4rem;
+  color: #4F3422;
+}
+.main__subtitles::after {
+  content: "";
+  display: block;
+  width: 50vw;
+  height: 4px;
+  margin-top: 2rem;
+  background-color: #FFC53D;
+}
+.main__description {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  color: #FEFBE9;
 }/*# sourceMappingURL=main.css.map */
