@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,4 +52,62 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+.navigation__logo {
+  width: 25vw;
+  height: auto;
+}
+.navigation__input {
+  display: none;
+}
+.navigation__input:checked ~ .navigation__items {
+  left: 0;
+}
+.navigation__input:checked ~ .navigation__burger::before {
+  content: "✖";
+  color: #FEFBE9;
+  font-size: 10vw;
+}
+.navigation__burger {
+  position: inherit;
+  padding: 1rem;
+  font-size: 13vw;
+  color: #4F3422;
+  font-weight: bold;
+  z-index: 10;
+}
+.navigation__burger::before {
+  content: "≡";
+}
+.navigation__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  background-color: #4F3422;
+  color: #FEFBE9;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: -100vw;
+  top: 0;
+  transition: left 1s;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 4.8rem;
+}
+.navigation__item {
+  padding-left: 2rem;
+}
+
+body {
+  background-color: #FEFBE9;
 }/*# sourceMappingURL=main.css.map */
