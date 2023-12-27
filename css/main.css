@@ -281,7 +281,13 @@ body {
   align-items: center;
   background-color: #E4DAA6;
 }
-.contact__map iframe {
+.contact__localisation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__localisation iframe {
   width: 80vw;
   height: 20vh;
   margin-top: 2rem;
@@ -368,6 +374,44 @@ body {
   text-decoration: none;
   color: #4F3422;
 }
+
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    margin-top: 2rem;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .contact__form {
+    order: -1;
+    flex-basis: 30%;
+    height: 80vh;
+  }
+  .contact__localisation {
+    align-items: flex-start;
+  }
+  .contact__localisation iframe {
+    width: 30vw;
+    height: 40vh;
+  }
+  .contact__text {
+    width: 30vw;
+    margin-bottom: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .contact__horaires {
+    margin-left: 0;
+  }
+  .contact__adresse {
+    margin-left: 0;
+    width: 100%;
+    text-align: end;
 
 @media screen and (min-width: 640px) {
   .header__title {
@@ -460,5 +504,6 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+
   }
 }/*# sourceMappingURL=main.css.map */
