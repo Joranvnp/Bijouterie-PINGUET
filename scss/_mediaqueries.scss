@@ -3,7 +3,6 @@
     @media screen and (min-width: 1024px) {
         margin-top: 2rem;
         flex-direction: row;
-        flex-wrap: wrap;
         gap: 4rem;
 
         &__form {
@@ -13,17 +12,32 @@
         }
 
         &__localisation {
+            align-items: flex-start;
             iframe {
                 width: 30vw;
                 height: 40vh;
-                flex-basis: 1 1 40%;
             }
         }
 
         &__text {
+            width: 30vw;
             margin-bottom: 2rem;
             @include paragraph;
-            flex: 1 1 100%;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        &__horaires {
+            margin-left: 0;
+        }
+
+        &__adresse {
+            margin-left: 0;
+            width: 100%;
+            text-align: end;
         }
     }
 }
