@@ -20,6 +20,8 @@ body {
   &__title {
     @include titre-mobile;
     color: $highText;
+    width: 90%;
+    flex-wrap: wrap;
     margin-bottom: 5rem;
     font-weight: 500;
     span {
@@ -33,7 +35,6 @@ body {
     margin-bottom: 5rem;
     flex-wrap: wrap;
     font-weight: 500;
-    // border: black 1px solid;
     width: 90%;
     span {
       display: block;
@@ -235,5 +236,28 @@ body {
     &__left a, &__right a{
         text-decoration: none;
         color: $highText;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .header {
+        padding-left: 5rem;
+
+        &__title {
+            @include titre-tablette;
+            width: 100%;
+            margin-bottom: 5rem;
+            span {
+                border-bottom: $solidBackground 4px solid;
+            }
+        }
+        &__subtitle {
+            @include sous-titre-tablette;
+            width: 100%;
+            span {
+                display: block;
+                margin-top: 5rem;
+            }
+        }
     }
 }
