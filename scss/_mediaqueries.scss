@@ -18,6 +18,22 @@
             }
         }
     }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 15vh;
+        width: 100vw;
+
+        &__left {
+            margin-left: 5rem;
+        }
+
+        &__right {
+            margin-right: 5rem;
+        }
+    }
 }
 
 // Desktop
