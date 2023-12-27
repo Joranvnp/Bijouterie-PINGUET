@@ -3,94 +3,103 @@ html {
 }
 
 body {
-  @include secondBackground;
+    @include secondBackground;
 }
 
 
 .header {
-  width: 100vw;
-  height: 100vh;
-  gap: 6rem;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
-  &__title {
-    @include titre-mobile;
-    color: $highText;
-    margin-bottom: 5rem;
-    font-weight: 500;
-    span {
-      border-bottom: $solidBackground 4px solid;
-    }
-  }
-
-  &__subtitle {
-    @include sous-titre-mobile;
-    color: $highText;
-    margin-bottom: 5rem;
+    width: 100vw;
+    height: 100vh;
+    gap: 6rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    font-weight: 500;
-    // border: black 1px solid;
-    width: 90%;
-    span {
-      display: block;
-      margin-top: 5rem;
+
+    &__title {
+        @include titre-mobile;
+        color: $highText;
+        margin-bottom: 5rem;
+        font-weight: 500;
+
+        span {
+            border-bottom: $solidBackground 4px solid;
+        }
     }
-  }
+
+    &__subtitle {
+        @include sous-titre-mobile;
+        color: $highText;
+        margin-bottom: 5rem;
+        flex-wrap: wrap;
+        font-weight: 500;
+        // border: black 1px solid;
+        width: 90%;
+
+        span {
+            display: block;
+            margin-top: 5rem;
+        }
+    }
 }
 
 .main {
     display: flex;
     flex-direction: column;
     background-color: $thirdBackground;
-    height:500vh;
+    height: 500vh;
     padding: 5rem;
     position: relative;
-    &__title{
-        height:100vh;
+
+    &__title {
+        height: 100vh;
         @include titre-mobile;
         color: $highText;
         text-align: center;
         padding-top: 75vh;
     }
-    &__linesright{
+
+    &__linesright {
         position: absolute;
-        top:0;
-        right:0;
+        top: 0;
+        right: 0;
     }
-    &__linesleft{
+
+    &__linesleft {
         position: absolute;
         top: 120vh;
-        left:0;
+        left: 0;
     }
-    &__images{
+
+    &__images {
         margin-top: 8rem;
         width: 100%;
-        height:50vh;
+        height: 50vh;
     }
-    &__subtitles{
+
+    &__subtitles {
         padding-top: 2rem;
         padding-bottom: 2rem;
         @include sous-titre-mobile;
         color: $highText;
-        &::after{
+
+        &::after {
             content: "";
             display: block;
             width: 50vw;
-            height:4px;
-            margin-top:2rem;
+            height: 4px;
+            margin-top: 2rem;
             background-color: $solidBackground;
         }
     }
-    &__description{
+
+    &__description {
         @include paragraph-mobile;
         color: $firstBackground;
     }
 
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 
@@ -145,17 +154,24 @@ body {
     align-items: center;
     background-color: $contactBackground;
 
-    &__map iframe {
-        width: 80vw;
-        height: 20vh;
-        margin-top: 2rem;
+    &__localisation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        iframe {
+            width: 80vw;
+            height: 20vh;
+            margin-top: 2rem;
+        }
     }
 
     &__text {
         color: $thirdBackground;
     }
 
-    &__horaires, &__adresse {
+    &__horaires,
+    &__adresse {
         width: 80%;
         margin-left: 2rem;
         margin-top: 2rem;
@@ -226,13 +242,15 @@ body {
     @include paragraph-mobile;
     color: $highText;
 
-    &__left, &__right {
+    &__left,
+    &__right {
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
-    
-    &__left a, &__right a{
+
+    &__left a,
+    &__right a {
         text-decoration: none;
         color: $highText;
     }

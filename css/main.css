@@ -54,22 +54,6 @@ table {
   border-spacing: 0;
 }
 
-@media screen and (min-width: 1024px) {
-  .contact {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #E4DAA6;
-  }
-  .contact__map iframe {
-    width: 80vw;
-    height: 20vh;
-    margin-top: 2rem;
-  }
-}
-
 .navigation {
   display: flex;
   flex-direction: row;
@@ -266,7 +250,13 @@ body {
   align-items: center;
   background-color: #E4DAA6;
 }
-.contact__map iframe {
+.contact__localisation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__localisation iframe {
   width: 80vw;
   height: 20vh;
   margin-top: 2rem;
@@ -352,4 +342,29 @@ body {
 .footer__left a, .footer__right a {
   text-decoration: none;
   color: #4F3422;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    margin-top: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+  .contact__form {
+    order: -1;
+    flex-basis: 30%;
+    height: 80vh;
+  }
+  .contact__localisation iframe {
+    width: 30vw;
+    height: 40vh;
+    flex-basis: 1 1 40%;
+  }
+  .contact__text {
+    margin-bottom: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2.4rem;
+    flex: 1 1 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
