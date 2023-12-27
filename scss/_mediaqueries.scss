@@ -39,6 +39,31 @@
 
 // Desktop
 @media screen and (min-width: 1024px) {
+    .header {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 5rem;
+
+        &__title {
+            @include titre;
+            width: auto;
+            padding-bottom: 3rem;
+            span {
+                border-bottom: $solidBackground 4px solid;
+            }
+        }
+
+        &__subtitle {
+            @include sous-titre;
+            width: auto;
+            span {
+                display: block;
+                padding-top: 1rem;
+            }
+        }
+    }
   
      .contact {
         margin-top: 2rem;
@@ -80,7 +105,8 @@
             text-align: end;
         }
     }
-    .creations {
+
+  .creations {
         position: relative;
         &__title {
             margin-top: 4rem;

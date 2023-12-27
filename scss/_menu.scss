@@ -94,3 +94,18 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .navigation {
+    display: flex;
+    margin-top: 5rem;
+    &__logo {
+      width: 15vw;
+      align-self: center;
+    }
+
+    &__items {
+      @include sous-titre;
+    }
+  }
+}
