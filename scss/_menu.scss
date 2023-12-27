@@ -50,27 +50,47 @@
     left: -100vw;
     top: 0;
     transition: left 1s;
-    @include sous-titre;
+    @include sous-titre-mobile;
   }
 
   &__item {
     padding-left:2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $secondBackground;
+
   }
 }
 
 
 @media screen and (min-width: 640px) {
   .navigation {
+    &__logo {
+      width: 15vw;
+    }
+
     &__burger::before {
       display: none;
     }
 
     &__items {
+      width: 95vw;
       height: inherit;
-      background-color: none;
+      // Aucun background-color
+      background-color: transparent;
+      color: $lowText;
       flex-direction: row;
       left: 0;
       align-items: center;
+      justify-content: flex-end;
+      padding-right: 1rem;
+      @include sous-titre-tablette;
+    }
+
+    a{
+      color: $lowText;
     }
   }
 }
