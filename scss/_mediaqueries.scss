@@ -1,0 +1,16 @@
+.contact {
+    @media screen and (min-width: 1024px) {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $contactBackground;
+    
+        &__map iframe {
+            width: 80vw;
+            height: 20vh;
+            margin-top: 2rem;
+        }
+    }
+}

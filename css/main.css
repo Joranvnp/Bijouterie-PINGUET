@@ -54,6 +54,22 @@ table {
   border-spacing: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .contact {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4DAA6;
+  }
+  .contact__map iframe {
+    width: 80vw;
+    height: 20vh;
+    margin-top: 2rem;
+  }
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
