@@ -76,9 +76,9 @@
     }
 
     &__items {
-      width: 95vw;
+      transition: none;
+      width: 95%;
       height: inherit;
-      // Aucun background-color
       background-color: transparent;
       color: $lowText;
       flex-direction: row;

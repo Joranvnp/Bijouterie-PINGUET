@@ -120,7 +120,8 @@ table {
     display: none;
   }
   .navigation__items {
-    width: 95vw;
+    transition: none;
+    width: 95%;
     height: inherit;
     background-color: transparent;
     color: #AB6400;
