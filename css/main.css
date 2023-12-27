@@ -137,6 +137,16 @@ table {
     color: #AB6400;
   }
 }
+@media screen and (min-width: 1024px) {
+  .navigation {
+    display: flex;
+    margin-top: 5rem;
+  }
+  .navigation__logo {
+    width: 15vw;
+    align-self: center;
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -405,11 +415,19 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
+  .header {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5rem;
+    flex-wrap: nowrap;
+  }
   .header__title {
     font-family: "Oswald", sans-serif;
     font-size: 9.6rem;
-    width: 90%;
-    margin-bottom: 5rem;
+    width: auto;
+    padding-bottom: 5rem;
   }
   .header__title span {
     border-bottom: #FFC53D 4px solid;
@@ -417,11 +435,11 @@ body {
   .header__subtitle {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 4.8rem;
-    width: 90%;
+    width: auto;
   }
   .header__subtitle span {
     display: block;
-    margin-top: 5rem;
+    padding-top: 5rem;
   }
   .creations {
     position: relative;

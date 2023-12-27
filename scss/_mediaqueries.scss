@@ -40,10 +40,17 @@
 // Desktop
 @media screen and (min-width: 1024px) {
     .header {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 5rem;
+        flex-wrap: nowrap;
+
         &__title {
             @include titre;
-            width: 90%;
-            margin-bottom: 5rem;
+            width: auto;
+            padding-bottom: 5rem;
             span {
                 border-bottom: $solidBackground 4px solid;
             }
@@ -51,10 +58,10 @@
 
         &__subtitle {
             @include sous-titre;
-            width: 90%;
+            width: auto;
             span {
                 display: block;
-                margin-top: 5rem;
+                padding-top: 5rem;
             }
         }
     }
