@@ -1,6 +1,46 @@
-//desktop
-.contact {
-    @media screen and (min-width: 1024px) {
+// Tablette
+@media screen and (min-width: 640px) {
+    .header {
+        &__title {
+            @include titre-tablette;
+            width: 90%;
+            margin-bottom: 5rem;
+            span {
+                border-bottom: $solidBackground 4px solid;
+            }
+        }
+        &__subtitle {
+            @include sous-titre-tablette;
+            width: 90%;
+            span {
+                display: block;
+                margin-top: 5rem;
+            }
+        }
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 15vh;
+        width: 100vw;
+        @include paragraph-tablette;
+
+        &__left {
+            margin-left: 5rem;
+        }
+
+        &__right {
+            margin-right: 5rem;
+        }
+    }
+}
+
+// Desktop
+@media screen and (min-width: 1024px) {
+  
+     .contact {
         margin-top: 2rem;
         flex-direction: row;
         gap: 4rem;
@@ -38,6 +78,61 @@
             margin-left: 0;
             width: 100%;
             text-align: end;
+        }
+    }
+    .creations {
+        position: relative;
+        &__title {
+            margin-top: 4rem;
+            @include titre-section;
+            color: $highText;
+        }
+
+        &__subtitle {
+            margin-top: 4rem;
+            @include titre-section;
+            color: $lowText;
+            text-align: center;
+        }
+        &__images {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__image {
+            width: 30vw;
+            height: 20vw;
+        }
+        &__aigue {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+        &__peridot {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        &__tanzanite {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        &__spinelle {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
         }
     }
 }

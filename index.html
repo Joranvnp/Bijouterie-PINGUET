@@ -15,13 +15,13 @@
         <input class="navigation__input" type="checkbox" name="burger" id="icone-burger-close">
         <label class="navigation__burger" for="icone-burger-close"></label>
         <ul class="navigation__items">
-            <li class="navigation__item">Accueil</li>
+            <li class="navigation__item"><a href="#header">Accueil</a></li>
             <li class="navigation__item">Création</li>
             <li class="navigation__item">A propos</li>
-            <li class="navigation__item">Contact</li>
+            <li class="navigation__item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header class="header">
+    <header class="header" id="header">
         <h1 class="header__subtitle">Maitre artisan Bijoutier Joailler depuis 1950<span>Création, fabrication,
                 transformation, réparation, rénovation</span>
         </h1>
@@ -66,6 +66,11 @@
         <h2 class="creations__title">Nos créations</h2>
         <h3 class="creations__subtitle">Des bijoux en Saphir, Rubis, Emeraude, Perle, Perle De Tahiti, Aigue_Marine,
             Tanzanite, Citrine, Amethyste, Peridot, Tourmaline, Spinelle, Grenat etc...</h3>
+        <img src="assets/aigue.png" alt="aigue" class="creations__aigue" hidden>
+        <img src="assets/peridot.png" alt="peridot" class="creations__peridot" hidden>
+        <img src="assets/tanzanite.png" alt="tanzanite" class="creations__tanzanite" hidden>
+        <img src="assets/spinelle.png" alt="spinelle" class="creations__spinelle" hidden>
+
         <div class="creations__images">
             <img src="assets/creation1.png" alt="1" class="creations__image">
             <img src="assets/creation2.png" alt="2" class="creations__image">
@@ -76,7 +81,7 @@
             <img src="assets/creation7.png" alt="7" class="creations__image">
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
 
         <figure class="contact__localisation">
             <iframe
@@ -107,7 +112,7 @@
     <footer class="footer">
         <section class="footer__left">
             <h2 class="footer__title">Bijouterie Joaillerie PINGUET</h2>
-            <a class="footer__adresse" href="">29 rue Gargoulleau
+            <a class="footer__adresse" href="">29 rue Gargoulleau, <br>
                 17000 LA ROCHELLE</a>
             <p class="footer__copyright">Francis Lecutiez © 2023</p>
         </section>
