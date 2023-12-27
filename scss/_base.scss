@@ -20,6 +20,8 @@ body {
   &__title {
     @include titre-mobile;
     color: $highText;
+    width: 90%;
+    flex-wrap: wrap;
     margin-bottom: 5rem;
     font-weight: 500;
     span {

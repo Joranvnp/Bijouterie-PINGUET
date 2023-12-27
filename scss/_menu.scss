@@ -57,3 +57,20 @@
     padding-left:2rem;
   }
 }
+
+
+@media screen and (min-width: 640px) {
+  .navigation {
+    &__burger::before {
+      display: none;
+    }
+
+    &__items {
+      height: inherit;
+      background-color: none;
+      flex-direction: row;
+      left: 0;
+      align-items: center;
+    }
+  }
+}
