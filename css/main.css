@@ -336,4 +336,32 @@ body {
 .footer__left a, .footer__right a {
   text-decoration: none;
   color: #4F3422;
+}
+
+@media screen and (min-width: 1024px) {
+  .creations__title {
+    margin-top: 4rem;
+    font-family: "Oswald", sans-serif;
+    font-size: 6.4rem;
+    color: #4F3422;
+  }
+  .creations__subtitle {
+    margin-top: 4rem;
+    font-family: "Oswald", sans-serif;
+    font-size: 6.4rem;
+    color: #AB6400;
+    text-align: center;
+  }
+  .creations__images {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .creations__image {
+    width: 30vw;
+    height: 20vw;
+  }
 }/*# sourceMappingURL=main.css.map */

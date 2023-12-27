@@ -1,0 +1,28 @@
+.creations {
+    @media screen and (min-width: 1024px) {
+        &__title {
+            margin-top: 4rem;
+            @include titre-section;
+            color: $highText;
+        }
+
+        &__subtitle {
+            margin-top: 4rem;
+            @include titre-section;
+            color: $lowText;
+            text-align: center;
+        }
+        &__images {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__image {
+            width: 30vw;
+            height: 20vw;
+        }
+    }
+}
