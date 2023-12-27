@@ -1,0 +1,57 @@
+.creations {
+    position: relative;
+    @media screen and (min-width: 1024px) {
+        &__title {
+            margin-top: 4rem;
+            @include titre-section;
+            color: $highText;
+        }
+
+        &__subtitle {
+            margin-top: 4rem;
+            @include titre-section;
+            color: $lowText;
+            text-align: center;
+        }
+        &__images {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        &__image {
+            width: 30vw;
+            height: 20vw;
+        }
+        &__aigue {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+        &__peridot {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        &__tanzanite {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        &__spinelle {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}

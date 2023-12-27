@@ -369,6 +369,63 @@ body {
   color: #4F3422;
 }
 
+.creations {
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .creations__title {
+    margin-top: 4rem;
+    font-family: "Oswald", sans-serif;
+    font-size: 6.4rem;
+    color: #4F3422;
+  }
+  .creations__subtitle {
+    margin-top: 4rem;
+    font-family: "Oswald", sans-serif;
+    font-size: 6.4rem;
+    color: #AB6400;
+    text-align: center;
+  }
+  .creations__images {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .creations__image {
+    width: 30vw;
+    height: 20vw;
+  }
+  .creations__aigue {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .creations__peridot {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .creations__tanzanite {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .creations__spinelle {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 @media screen and (min-width: 640px) {
   .header__title {
     font-family: "Oswald", sans-serif;
