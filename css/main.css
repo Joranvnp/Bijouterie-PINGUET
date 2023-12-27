@@ -367,4 +367,28 @@ body {
 .footer__left a, .footer__right a {
   text-decoration: none;
   color: #4F3422;
+}
+
+@media screen and (min-width: 640px) {
+  .header {
+    padding-left: 5rem;
+  }
+  .header__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 5.6rem;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .header__title span {
+    border-bottom: #FFC53D 4px solid;
+  }
+  .header__subtitle {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 3.2rem;
+    width: 100%;
+  }
+  .header__subtitle span {
+    display: block;
+    margin-top: 5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
