@@ -405,6 +405,24 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
+  .header__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 9.6rem;
+    width: 90%;
+    margin-bottom: 5rem;
+  }
+  .header__title span {
+    border-bottom: #FFC53D 4px solid;
+  }
+  .header__subtitle {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 4.8rem;
+    width: 90%;
+  }
+  .header__subtitle span {
+    display: block;
+    margin-top: 5rem;
+  }
   .creations {
     position: relative;
   }

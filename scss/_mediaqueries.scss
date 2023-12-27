@@ -39,6 +39,26 @@
 
 // Desktop
 @media screen and (min-width: 1024px) {
+    .header {
+        &__title {
+            @include titre;
+            width: 90%;
+            margin-bottom: 5rem;
+            span {
+                border-bottom: $solidBackground 4px solid;
+            }
+        }
+
+        &__subtitle {
+            @include sous-titre;
+            width: 90%;
+            span {
+                display: block;
+                margin-top: 5rem;
+            }
+        }
+    }
+
     .creations {
         position: relative;
         &__title {
