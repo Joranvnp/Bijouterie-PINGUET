@@ -45,12 +45,11 @@
         justify-content: center;
         align-items: flex-start;
         padding-left: 5rem;
-        flex-wrap: nowrap;
 
         &__title {
             @include titre;
             width: auto;
-            padding-bottom: 5rem;
+            padding-bottom: 3rem;
             span {
                 border-bottom: $solidBackground 4px solid;
             }
@@ -61,7 +60,7 @@
             width: auto;
             span {
                 display: block;
-                padding-top: 5rem;
+                padding-top: 1rem;
             }
         }
     }

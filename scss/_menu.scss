@@ -103,5 +103,9 @@
       width: 15vw;
       align-self: center;
     }
+
+    &__items {
+      @include sous-titre;
+    }
   }
 }
